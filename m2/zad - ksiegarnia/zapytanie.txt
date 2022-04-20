@@ -1,0 +1,1 @@
+SELECT k.imie, k.nazwisko, z.idzamowienia, z.data, z.status, ks.tytul FROM klienci AS k, zamowienia AS z, ksiazki AS ks WHERE k.idklienta = z.idklienta AND z.idksiazki = ks.idksiazki AND k.nazwisko="Rutkowski" ORDER BY z.data DESC
